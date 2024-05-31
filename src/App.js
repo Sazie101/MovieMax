@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+
+const galleryImages = [
+  "https://raw.githubusercontent.com/mrspecht/media/main/img/jurassic-park.jpg",
+  "https://raw.githubusercontent.com/mrspecht/media/main/img/the-matrix.jpg",
+  "https://raw.githubusercontent.com/mrspecht/media/main/img/oceans-eleven.jpg",
+  "https://raw.githubusercontent.com/mrspecht/media/main/img/jfk.jpg"
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header title="Components"/>
+      <main>
+        <div className="container">
+          <Banner
+            title="Welcome to My Website"
+            text="This is a banner description."
+            primaryBtnText="Get Started"
+            secondaryBtnText="Learn More"
+          />
+          <h2>Gallery</h2>
+          <Gallery images={galleryImages} />
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 }
 
