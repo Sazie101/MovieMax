@@ -13,16 +13,15 @@ const galleryImages = [
 function App() {
   return (
     <>
-      <Header title="Components"/>
+      <Header title="MovieMax"/>
       <main>
         <div className="container">
           <Banner
-            title="Welcome to My Website"
-            text="This is a banner description."
+            title="Explore the World of Movies"
+            text="Discover the latest releases, timeless classics, and hidden gems."
             primaryBtnText="Get Started"
             secondaryBtnText="Learn More"
           />
-          <h2>Gallery</h2>
           <Gallery images={galleryImages} />
         </div>
       </main>

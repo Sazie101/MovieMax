@@ -1,3 +1,12 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+  
+#root {
+    min-height: 100vh;
+}
+
 h1, h2, h3, p, li, a {
     font-family: "Poppins", "Nunito Sans", Arial, sans-serif;
 }
@@ -5,6 +14,7 @@ h1, h2, h3, p, li, a {
 h1, h2, h3 {
     color: #fff;
     font-size: 2.4rem;
+    margin: 0;
 }
   
 .container {
@@ -14,13 +24,17 @@ h1, h2, h3 {
   
 header {
     height: 56px;
-    background-color: #333;
+    background-color: #211f2b;
     margin-bottom: 20px;
 }
   
 .head {
     display: flex;
     justify-content: space-between;
+}
+
+.head h1 {
+    padding: 0 30px;
 }
   
 ul li {
@@ -106,7 +120,7 @@ main h2 {
 /**********************************/
   
 footer {
-    background-color: #333;
+    background-color: #0f0f15;
     color: #fff;
     text-align: center;
     padding: 10px 0;
